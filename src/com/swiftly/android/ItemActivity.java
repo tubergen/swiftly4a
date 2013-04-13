@@ -22,6 +22,8 @@ import java.lang.Exception;import java.lang.Override;import java.lang.String;imp
 import java.net.URL;
 
 public class ItemActivity extends Activity {
+    public static final String KEY_BARCODE = "KEY_BARCODE";
+
     private static final String ITEM_URL = "http://10.8.179.92:3000/api/v1/item.json";
     private ItemsDbAdapter mDbHelper;
 
