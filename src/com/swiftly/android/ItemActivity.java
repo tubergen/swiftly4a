@@ -63,8 +63,7 @@ public class ItemActivity extends Activity {
                         (float) i.getDouble("price"),
                         false);
 
-                int barcode = 12591; // this should be passed in, eventually
-                if (mDbHelper.getItemByBarcode(barcode) == null) {
+                if (mDbHelper.getItemByBarcode(item.barcode) == null) {
                     mDbHelper.putItem(item);
                 } else {
                     // Yes, we always update the item with data from the web.
@@ -126,7 +125,6 @@ public class ItemActivity extends Activity {
         protected void onPostExecute(Void v) {
             Log.d("ItemActivity", "load image task oPE");
             ((ImageView) findViewById(R.id.item_img)).setImageBitmap(img);
-            Toast.makeText(ItemActivity.this, img.toString(), Toast.LENGTH_LONG).show();
 
             // cache the image
             File f = new File(getCacheDir(), "" + item.barcode);

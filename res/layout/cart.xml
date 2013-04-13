@@ -8,7 +8,8 @@
     <TextView
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="hello self" />
+            android:text="@string/cart"
+            android:gravity="center" />
 
     <ListView android:id="@+id/listView1"
         android:layout_width="match_parent"

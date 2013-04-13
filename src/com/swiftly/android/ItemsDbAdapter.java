@@ -139,8 +139,13 @@ public class ItemsDbAdapter {
 
     private Item getItemFromCursor(Cursor c) {
         return new Item(
-                c.getString(1), c.getInt(2), c.getInt(3), c.getString(4), c.getString(5), c.getFloat(6),
-                c.getInt(7) == 1 ? true : false
+                c.getString(c.getColumnIndex(KEY_ITEM_NAME)),
+                c.getInt(c.getColumnIndex(KEY_ITEM_BARCODE)),
+                c.getInt(c.getColumnIndex(KEY_ITEM_WID)),
+                c.getString(c.getColumnIndex(KEY_ITEM_WEB_IMG_PATH)),
+                c.getString(c.getColumnIndex(KEY_ITEM_LOCAL_IMG_PATH)),
+                c.getFloat(c.getColumnIndex(KEY_ITEM_PRICE)),
+                c.getInt(c.getColumnIndex(KEY_ITEM_IS_IN_CART)) == 1 ? true : false
         );
     }
 
