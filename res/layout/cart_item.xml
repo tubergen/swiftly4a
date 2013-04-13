@@ -12,6 +12,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" />
 
+    <Button
+        android:id="@+id/delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="X" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"

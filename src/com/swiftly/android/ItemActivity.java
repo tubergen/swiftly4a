@@ -18,7 +18,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.Exception;import java.lang.Override;import java.lang.String;import java.lang.Void;import java.net.HttpURLConnection;
+import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ItemActivity extends Activity {
@@ -36,8 +36,7 @@ public class ItemActivity extends Activity {
         mBarcode = getIntent().getStringExtra(KEY_BARCODE);
         mBarcode = Math.random() > 0.5 ? "012591" : "011591"; // temp temp temp
 
-        mDbHelper = new ItemsDbAdapter(this);
-        mDbHelper.open();
+        mDbHelper = ((MyApplication) getApplication()).getDatabaseAdapter();
         loadItemFromAPI(ITEMS_URL + mBarcode);
     }
 

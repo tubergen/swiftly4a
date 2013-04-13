@@ -1,16 +1,15 @@
 package com.swiftly.android.savagelook;
 
-import java.io.IOException;
-import java.net.SocketTimeoutException;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.util.Log;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.net.SocketTimeoutException;
 
 public class UrlJsonAsyncTask extends AsyncTask<String, Void, JSONObject> {
 	private static final String TAG = "com.swiftly.android.savagelook.UrlJsonAsyncTask";

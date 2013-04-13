@@ -24,8 +24,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import java.lang.Override;import java.lang.String;
-
 public class ItemsDbAdapter {
 
     public static final String KEY_ROWID = "_id";
@@ -137,7 +135,7 @@ public class ItemsDbAdapter {
         return mDb.delete(DATABASE_TABLE, KEY_ITEM_BARCODE  + "= ?", new String[] {i.barcode}) > 0;
     }
 
-    private Item getItemFromCursor(Cursor c) {
+    public Item getItemFromCursor(Cursor c) {
         return new Item(
                 c.getString(c.getColumnIndex(KEY_ITEM_NAME)),
                 c.getString(c.getColumnIndex(KEY_ITEM_BARCODE)),

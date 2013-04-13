@@ -1,7 +1,5 @@
 package com.swiftly.android;
 
-import org.json.JSONObject;
-
 public class Item {
     public String name;
     public String barcode;

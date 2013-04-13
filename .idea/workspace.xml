@@ -28,22 +28,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f5d021-a43a-47fa-9fba-24c65176f3d0" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/swiftly/android/CameraTestActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/swiftly/android/MyApplication.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/CameraPreview.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/CameraPreview.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/Item.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/Item.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonHelper.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonSpinner.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonSpinner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/UrlJsonAsyncTask.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/savagelook/UrlJsonAsyncTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/cart_item.xml" afterPath="$PROJECT_DIR$/res/layout/cart_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swiftly4a.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813956343" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/Toaster.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonSpinner.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/../android_hello_world2/AndroidManifest.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/Lazy.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/KeyValuePair.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/JsonHelper.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/ToastSingleton.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/../android_hello_world2/gen/com/example/swiftly4a/R.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365814076763" ignored="false" />
     <file path="$PROJECT_DIR$/../android_hello_world2/gen/com/example/swiftly4a/Manifest.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365814076763" ignored="false" />
@@ -51,16 +57,19 @@
     <file path="/strings.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365832518902" ignored="false" />
     <file path="/DbAdapter.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365818945254" ignored="false" />
     <file path="/Item.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365877918662" ignored="false" />
-    <file path="/ItemActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365878130828" ignored="false" />
-    <file path="/ItemsDbAdapter.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365877973123" ignored="false" />
+    <file path="/ItemActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880301949" ignored="false" />
+    <file path="/ItemsDbAdapter.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365879570271" ignored="false" />
     <file path="/item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365826888949" ignored="false" />
-    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365833716079" ignored="false" />
+    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880229772" ignored="false" />
     <file path="/a.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365828149736" ignored="false" />
     <file path="/cart.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365832544023" ignored="false" />
-    <file path="/cart_item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365832932149" ignored="false" />
+    <file path="/cart_item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365878707210" ignored="false" />
     <file path="/values.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365832973398" ignored="false" />
     <file path="/CameraTestActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365874601919" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365835554446" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/swiftly/android/R.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880126811" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/swiftly/android/Manifest.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880126812" ignored="false" />
+    <file path="/MyApplication.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880255739" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,12 +130,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CartActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CartActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="33" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
+            <state line="21" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.5263158">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1742#2203#0" expanded="true" />
+                <element signature="e#2184#2185#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,21 +146,12 @@
       <file leaf-file-name="cart_item.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/cart_item.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="17" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-2.7682927">
+            <state line="15" column="36" selection-start="536" selection-end="547" vertical-scroll-proportion="-2.7439024">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dimension.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/dimension.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="40" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -168,12 +170,13 @@
       <file leaf-file-name="ScanActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="66" selection-start="3752" selection-end="3752" vertical-scroll-proportion="-9.0">
+            <state line="128" column="38" selection-start="3749" selection-end="3749" vertical-scroll-proportion="-9.0">
               <folding>
-                <element signature="e#2023#2459#0" expanded="true" />
-                <element signature="e#2448#2449#0" expanded="true" />
-                <element signature="e#3225#4140#0" expanded="true" />
-                <element signature="e#4133#4134#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2020#2456#0" expanded="true" />
+                <element signature="e#2445#2446#0" expanded="true" />
+                <element signature="e#3222#4137#0" expanded="true" />
+                <element signature="e#4130#4131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,10 +185,8 @@
       <file leaf-file-name="ItemActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="40" selection-start="3262" selection-end="3262" vertical-scroll-proportion="-11.153846">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="38" column="20" selection-start="1197" selection-end="1253" vertical-scroll-proportion="-8.846154">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,7 +194,7 @@
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="70" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+            <state line="12" column="70" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -202,26 +203,28 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="69" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="9" column="47" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraPreview.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CameraPreview.java">
+      <file leaf-file-name="MyApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/MyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="17" column="30" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemsDbAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ItemsDbAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="44" selection-start="6350" selection-end="6350" vertical-scroll-proportion="0.65346533">
-              <folding />
+            <state line="104" column="46" selection-start="4011" selection-end="4011" vertical-scroll-proportion="-1.8363637">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -250,15 +253,16 @@
         <option value="$PROJECT_DIR$/res/layout/cart.xml" />
         <option value="$PROJECT_DIR$/res/values/values.xml" />
         <option value="$PROJECT_DIR$/res/values/dimension.xml" />
-        <option value="$PROJECT_DIR$/res/layout/cart_item.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/CameraPreview.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/CameraTestActivity.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/Item.java" />
-        <option value="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/cart_item.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/swiftly/android/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
       </list>
     </option>
   </component>
@@ -613,13 +617,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37108794" sideWeight="0.9948674" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37108794" sideWeight="0.9948674" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2474315" sideWeight="0.6289121" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.9328125" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2474315" sideWeight="0.6706408" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935917" sideWeight="0.9328125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -691,20 +695,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/android-sdk-macosx/sources/android-17/android/widget/SimpleCursorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="11" selection-start="4462" selection-end="4462" vertical-scroll-proportion="3.0508475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android-sdk-macosx/sources/android-17/android/graphics/BitmapFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1676" selection-end="1682" vertical-scroll-proportion="0.9147287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="18" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
@@ -715,16 +705,6 @@
     <entry file="file://$PROJECT_DIR$/res/layout/cart.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.5555553">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/cart_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="17" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-2.7682927">
           <folding />
         </state>
       </provider>
@@ -752,7 +732,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CameraPreview.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -775,52 +757,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="66" selection-start="3752" selection-end="3752" vertical-scroll-proportion="-9.0">
+        <state line="128" column="38" selection-start="3749" selection-end="3749" vertical-scroll-proportion="-9.0">
           <folding>
-            <element signature="e#2023#2459#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
-            <element signature="e#3225#4140#0" expanded="true" />
-            <element signature="e#4133#4134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2020#2456#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#3222#4137#0" expanded="true" />
+            <element signature="e#4130#4131#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="69" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="70" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0">
+        <state line="12" column="70" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/cart_item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="33" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.0">
+        <state line="15" column="36" selection-start="536" selection-end="547" vertical-scroll-proportion="-2.7439024">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="47" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="46" selection-start="4011" selection-end="4011" vertical-scroll-proportion="-1.8363637">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="40" selection-start="3262" selection-end="3262" vertical-scroll-proportion="-11.153846">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="38" column="20" selection-start="1197" selection-end="1253" vertical-scroll-proportion="-8.846154">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="44" selection-start="6350" selection-end="6350" vertical-scroll-proportion="0.65346533">
-          <folding />
+        <state line="21" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.5263158">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1742#2203#0" expanded="true" />
+            <element signature="e#2184#2185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

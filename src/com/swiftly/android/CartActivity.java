@@ -2,15 +2,11 @@ package com.swiftly.android;
 
 import android.app.Activity;
 import android.database.Cursor;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.support.v4.widget.SimpleCursorAdapter;
-
-import java.io.File;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
 
 public class CartActivity extends Activity {
     private ItemsDbAdapter mDbHelper;
@@ -19,8 +15,7 @@ public class CartActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cart);
 
-        mDbHelper = new ItemsDbAdapter(this);
-        mDbHelper.open();
+        mDbHelper = ((MyApplication) getApplication()).getDatabaseAdapter();
 
         populateCartView();
     }
@@ -42,18 +37,33 @@ public class CartActivity extends Activity {
                 R.id.item_thumbnail
         };
 
+        final ListView listView = (ListView) findViewById(R.id.listView1);
+
         // create the adapter using the cursor pointing to the desired data
         //as well as the layout information
         SimpleCursorAdapter dataAdapter = new SimpleCursorAdapter(
-                this, R.layout.cart_item,
-                cursor,
-                columns,
-                to,
-                0);
+                this, R.layout.cart_item, cursor, columns, to, 0) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View v = super.getView(position, convertView, parent);
+
+                final int pos = position;
+                v.findViewById(R.id.delete_item).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Item item = mDbHelper.getItemFromCursor((Cursor) listView.getItemAtPosition(pos));
+                        item.cartQuantity = 0;
+                        mDbHelper.updateItem(item);
+                        Cursor cursor = mDbHelper.getCart();
+                        changeCursor(cursor);
+                    }
+                });
+                return v;
+            }
+        };
 
         // more at http://www.mysamplecode.com/2012/07/android-listview-cursoradapter-sqlite.html
 
-        ListView listView = (ListView) findViewById(R.id.listView1);
         // Assign adapter to ListView
         listView.setAdapter(dataAdapter);
     }
