@@ -3,4 +3,5 @@
     <string name="app_name">swiftly4a</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="cart">Cart</string>
+    <string name="checkout">Checkout</string>
 </resources>

@@ -2,11 +2,16 @@ package com.swiftly.android;
 
 import android.app.Activity;
 import android.database.Cursor;
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class CartActivity extends Activity {
     private ItemsDbAdapter mDbHelper;
@@ -20,8 +25,30 @@ public class CartActivity extends Activity {
         populateCartView();
     }
 
-    public void populateCartView() {
+    private String getAmountStr(double amount) {
+        NumberFormat form = NumberFormat.getCurrencyInstance(Locale.US);
+        return form.format(amount);
+    }
+
+    private void setTotal(Cursor cartCursor) {
+        double total = 0;
+        cartCursor.moveToFirst();
+        do {
+          total += cartCursor.getFloat(cartCursor.getColumnIndex(ItemsDbAdapter.KEY_ITEM_PRICE));
+        } while (cartCursor.moveToNext());
+
+        ((TextView) findViewById(R.id.checkout)).setText(getString(R.string.checkout)
+                + " (" + getAmountStr(total) + ")");
+    }
+
+    private Cursor getCart() {
         Cursor cursor = mDbHelper.getCart();
+        setTotal(cursor);
+        return cursor;
+    }
+
+    private void populateCartView() {
+        Cursor cursor = getCart();
 
         // The desired columns to be bound
         String[] columns = new String[] {
@@ -54,8 +81,7 @@ public class CartActivity extends Activity {
                         Item item = mDbHelper.getItemFromCursor((Cursor) listView.getItemAtPosition(pos));
                         item.cartQuantity = 0;
                         mDbHelper.updateItem(item);
-                        Cursor cursor = mDbHelper.getCart();
-                        changeCursor(cursor);
+                        changeCursor(getCart());
                     }
                 });
                 return v;
