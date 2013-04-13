@@ -24,22 +24,24 @@ import java.net.URL;
 public class ItemActivity extends Activity {
     public static final String KEY_BARCODE = "KEY_BARCODE";
 
-    private static final String ITEM_URL = "http://10.8.179.92:3000/api/v1/item.json";
+    private static final String ITEMS_URL = "http://10.8.179.92:3000/api/v1/items?barcode=";
     private ItemsDbAdapter mDbHelper;
+    private String mBarcode;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item);
 
-        int barcode = 12591; // barcode scanner activity should put this in an intent and launch this activity
+        mBarcode = getIntent().getStringExtra(KEY_BARCODE);
+        mBarcode = Math.random() > 0.5 ? "012591" : "011591"; // temp temp temp
 
         mDbHelper = new ItemsDbAdapter(this);
         mDbHelper.open();
-        loadItemFromAPI(ITEM_URL, barcode);
+        loadItemFromAPI(ITEMS_URL + mBarcode);
     }
 
-    private void loadItemFromAPI(String url, int barcode) {
+    private void loadItemFromAPI(String url) {
         GetItemTask getItemTask = new GetItemTask(ItemActivity.this);
         getItemTask.setMessageLoading("Loading item...");
         getItemTask.execute(url);
@@ -54,21 +56,22 @@ public class ItemActivity extends Activity {
         protected void onPostExecute(JSONObject json) {
             try {
                 Log.d("ItemActivity", "onPostExecute");
-                JSONObject i = json.getJSONArray("items").getJSONObject(0);
 
                 final Item item = new Item(
-                        i.getString("name"),
-                        i.getInt("barcode"),
-                        i.getInt("id"),
-                        i.getString("web_img_path"),
+                        json.getString("name"),
+                        json.getString("barcode"),
+                        json.getInt("id"),
+                        json.getString("web_img_path"),
                         "",
-                        (float) i.getDouble("price"),
-                        false);
+                        (float) json.getDouble("price"),
+                        0); // this probably needs to be a param on the web too
 
-                if (mDbHelper.getItemByBarcode(item.barcode) == null) {
+                Item localItem = mDbHelper.getItemByBarcode(item.barcode);
+                if (localItem == null) {
                     mDbHelper.putItem(item);
                 } else {
-                    // Yes, we always update the item with data from the web.
+                    item.cartQuantity = localItem.cartQuantity; // kind of hack-ish way of avoiding cartQuantity on web
+                    // always update the item with data from the web.
                     mDbHelper.updateItem(item);
                 }
 
@@ -80,7 +83,7 @@ public class ItemActivity extends Activity {
                 addToCart.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        item.isInCart = true;
+                        item.cartQuantity++;
                         mDbHelper.updateItem(item);
                         startActivity(new Intent(ItemActivity.this, CartActivity.class));
                     }

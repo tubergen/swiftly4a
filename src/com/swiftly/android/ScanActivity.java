@@ -11,31 +11,26 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.Button;
 
 import android.hardware.Camera;
 import android.hardware.Camera.PreviewCallback;
 import android.hardware.Camera.AutoFocusCallback;
-import android.hardware.Camera.Parameters;
 import android.hardware.Camera.Size;
 
 import android.widget.TextView;
-import android.graphics.ImageFormat;
 
 /* Import ZBar Class files */
 import net.sourceforge.zbar.ImageScanner;
 import net.sourceforge.zbar.Image;
 import net.sourceforge.zbar.Symbol;
-import net.sourceforge.zbar.SymbolSet;
 import net.sourceforge.zbar.Config;
 
-public class CameraTestActivity extends Activity
+public class ScanActivity extends Activity
 {
     private Camera mCamera;
     private CameraPreview mPreview;
@@ -139,7 +134,7 @@ public class CameraTestActivity extends Activity
                 for (Symbol sym : scanner.getResults()) {
                     scanText.setText("barcode result " + sym.getData());
                     barcodeScanned = true;
-                    startActivity(new Intent(CameraTestActivity.this, ItemActivity.class)
+                    startActivity(new Intent(ScanActivity.this, ItemActivity.class)
                             .putExtra(ItemActivity.KEY_BARCODE, sym.getData()));
                 }
             }

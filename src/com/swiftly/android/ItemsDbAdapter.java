@@ -36,7 +36,7 @@ public class ItemsDbAdapter {
     public static final String KEY_ITEM_WEB_IMG_PATH = "item_web_img_path"; // path to image on web
     public static final String KEY_ITEM_LOCAL_IMG_PATH = "item_local_img_path"; // path to image on local storage
     public static final String KEY_ITEM_PRICE = "item_price"; // price of item
-    public static final String KEY_ITEM_IS_IN_CART = "item_is_in_cart"; // is the item in the user's cart?
+    public static final String KEY_ITEM_CART_QUANTITY = "item_is_in_cart"; // quantity of item in user's cart
 
     private static final String TAG = "ItemsDbAdapter";
     private DatabaseHelper mDbHelper;
@@ -49,12 +49,12 @@ public class ItemsDbAdapter {
         "create table items (" +
                 KEY_ROWID + " integer primary key autoincrement," +
                 KEY_ITEM_NAME + " text not null," +
-                KEY_ITEM_BARCODE + " integer not null," +
+                KEY_ITEM_BARCODE + " text not null," +
                 KEY_ITEM_WID + " integer not null unique," +
                 KEY_ITEM_WEB_IMG_PATH + " text not null," +
                 KEY_ITEM_LOCAL_IMG_PATH + " text not null," +
                 KEY_ITEM_PRICE + " float not null," +
-                KEY_ITEM_IS_IN_CART + " boolean not null" +
+                KEY_ITEM_CART_QUANTITY + " integer not null" +
                 ");";
 
     private static final String DATABASE_NAME = "data";
@@ -105,7 +105,7 @@ public class ItemsDbAdapter {
     public ItemsDbAdapter open() throws SQLException {
         mDbHelper = new DatabaseHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
-        //mDbHelper.onUpgrade(mDb, 0, 1);
+        // mDbHelper.onUpgrade(mDb, 1, 2);
         return this;
     }
 
@@ -121,12 +121,12 @@ public class ItemsDbAdapter {
         cv.put(KEY_ITEM_WEB_IMG_PATH, i.webImgPath);
         cv.put(KEY_ITEM_LOCAL_IMG_PATH, i.localImgPath);
         cv.put(KEY_ITEM_PRICE, i.price);
-        cv.put(KEY_ITEM_IS_IN_CART, i.isInCart);
+        cv.put(KEY_ITEM_CART_QUANTITY, i.cartQuantity);
         return cv;
     }
 
     public boolean updateItem(Item i) {
-        return mDb.update(DATABASE_TABLE, getCVForItem(i), KEY_ITEM_BARCODE + "=" + i.barcode, null) > 0;
+        return mDb.update(DATABASE_TABLE, getCVForItem(i), KEY_ITEM_BARCODE + "= ?", new String[] {i.barcode}) > 0;
     }
 
     public long putItem(Item i) {
@@ -134,31 +134,31 @@ public class ItemsDbAdapter {
     }
 
     public boolean deleteItem(Item i) {
-        return mDb.delete(DATABASE_TABLE, KEY_ITEM_BARCODE + "=" + i.barcode, null) > 0;
+        return mDb.delete(DATABASE_TABLE, KEY_ITEM_BARCODE  + "= ?", new String[] {i.barcode}) > 0;
     }
 
     private Item getItemFromCursor(Cursor c) {
         return new Item(
                 c.getString(c.getColumnIndex(KEY_ITEM_NAME)),
-                c.getInt(c.getColumnIndex(KEY_ITEM_BARCODE)),
+                c.getString(c.getColumnIndex(KEY_ITEM_BARCODE)),
                 c.getInt(c.getColumnIndex(KEY_ITEM_WID)),
                 c.getString(c.getColumnIndex(KEY_ITEM_WEB_IMG_PATH)),
                 c.getString(c.getColumnIndex(KEY_ITEM_LOCAL_IMG_PATH)),
                 c.getFloat(c.getColumnIndex(KEY_ITEM_PRICE)),
-                c.getInt(c.getColumnIndex(KEY_ITEM_IS_IN_CART)) == 1 ? true : false
+                c.getInt(c.getColumnIndex(KEY_ITEM_CART_QUANTITY))
         );
     }
 
     private String[] getKeyArray() {
         return new String[] {
                 KEY_ROWID, KEY_ITEM_NAME, KEY_ITEM_BARCODE, KEY_ITEM_WID, KEY_ITEM_WEB_IMG_PATH,
-                KEY_ITEM_LOCAL_IMG_PATH, KEY_ITEM_PRICE, KEY_ITEM_IS_IN_CART
+                KEY_ITEM_LOCAL_IMG_PATH, KEY_ITEM_PRICE, KEY_ITEM_CART_QUANTITY
         };
     }
 
-    public Item getItemByBarcode(int barcode) {
+    public Item getItemByBarcode(String barcode) {
         Cursor c = mDb.query(DATABASE_TABLE, getKeyArray(),
-                KEY_ITEM_BARCODE + "=" + barcode, null, null, null, null);
+                KEY_ITEM_BARCODE + "= ?", new String[] {barcode}, null, null, null, null);
 
         while (c.moveToNext()) {
             return getItemFromCursor(c);
@@ -168,6 +168,6 @@ public class ItemsDbAdapter {
 
     public Cursor getCart() {
         return mDb.query(DATABASE_TABLE, getKeyArray(),
-                KEY_ITEM_IS_IN_CART + "=" + 1, null, null, null, null);
+                KEY_ITEM_CART_QUANTITY + "> 0", null, null, null, null);
     }
 }
