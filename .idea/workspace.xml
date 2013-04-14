@@ -19,7 +19,6 @@
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-17" />
         <option name="theme" value="Theme" />
-        <option name="visible" value="false" />
       </GlobalState>
     </option>
     <device-configurations>
@@ -27,29 +26,23 @@
     </device-configurations>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="BaseActivity" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f5d021-a43a-47fa-9fba-24c65176f3d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/shop_cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/shop_cart_inverse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/cart.xml" afterPath="$PROJECT_DIR$/res/layout/cart.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/cart_item.xml" afterPath="$PROJECT_DIR$/res/layout/cart_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/item.xml" afterPath="$PROJECT_DIR$/res/layout/item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftly4a.iml" afterPath="$PROJECT_DIR$/swiftly4a.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swiftly4a.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365904877606" ignored="false" />
+    <file path="/fragment.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365909347400" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/Toaster.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/../android_hello_world2/AndroidManifest.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/swiftly/android/savagelook/Lazy.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365813976387" ignored="false" />
@@ -63,16 +56,16 @@
     <file path="/Item.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365877918662" ignored="false" />
     <file path="/ItemActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365904451128" ignored="false" />
     <file path="/ItemsDbAdapter.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365879570271" ignored="false" />
-    <file path="/item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365904937493" ignored="false" />
-    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365905212437" ignored="false" />
+    <file path="/item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365913636282" ignored="false" />
+    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365915418072" ignored="false" />
     <file path="/a.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365903410057" ignored="false" />
     <file path="/cart.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365883340422" ignored="false" />
-    <file path="/cart_item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365878707210" ignored="false" />
+    <file path="/cart_item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365915306253" ignored="false" />
     <file path="/values.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365832973398" ignored="false" />
     <file path="/CameraTestActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365874601919" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365904334880" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365911263504" ignored="false" />
     <file path="/MyApplication.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365880255739" ignored="false" />
-    <file path="/ActionItems.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365905925458" ignored="false" />
+    <file path="/ActionItems.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365907298975" ignored="false" />
     <file path="/ActionModes.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365898821608" ignored="false" />
     <file path="/ActionModesNoActionBar.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365898844052" ignored="false" />
     <file path="$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/samples/demos/pom.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365899192108" ignored="false" />
@@ -83,6 +76,10 @@
     <file path="$PROJECT_DIR$/../temp/ActionBarSherlock/samples/demos/gen/com/actionbarsherlock/sample/demos/BuildConfig.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365900488624" ignored="false" />
     <file path="$PROJECT_DIR$/../temp/ActionBarSherlock/samples/demos/project.properties" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365900253365" ignored="false" />
     <file path="/ScanActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365905781846" ignored="false" />
+    <file path="$PROJECT_DIR$/../HoloEverywhere-master/addons/slider/project.properties" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365908838212" ignored="false" />
+    <file path="$PROJECT_DIR$/../HoloEverywhere-master/addons/preferences/project.properties" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365908868565" ignored="false" />
+    <file path="$PROJECT_DIR$/../HoloEverywhere-master/addons/roboguice/project.properties" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365908838212" ignored="false" />
+    <file path="$PROJECT_DIR$/../HoloEverywhere-master/demo/project.properties" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365908868565" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,41 +140,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="7" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.6724891">
+            <state line="73" column="0" selection-start="2787" selection-end="2787" vertical-scroll-proportion="-10.615385">
               <folding>
-                <element signature="e#1349#1654#0" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#2201#2202#0" expanded="true" />
+                <element signature="e#1396#1701#0" expanded="true" />
+                <element signature="e#1682#1683#0" expanded="true" />
+                <element signature="e#1962#2267#0" expanded="true" />
+                <element signature="e#2248#2249#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/src/com/actionbarsherlock/view/Menu.java">
+      <file leaf-file-name="RoundedImageView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RoundedImageView-master/RoundedImageView/src/com/makeramen/rounded/RoundedImageView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="29" selection-start="8297" selection-end="8297" vertical-scroll-proportion="0.0">
+            <state line="112" column="51" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/src/com/actionbarsherlock/view/MenuItem.java">
+      <file leaf-file-name="cart_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/cart_item.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="24" selection-start="4720" selection-end="4729" vertical-scroll-proportion="-8.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="441" selection-end="441" vertical-scroll-proportion="-6.111111">
+            <state line="40" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-11.666667">
               <folding />
             </state>
           </provider>
@@ -186,28 +175,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScanActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java">
+      <file leaf-file-name="zbar_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/zbar_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="35" selection-start="2658" selection-end="2669" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="36" selection-start="1328" selection-end="1328" vertical-scroll-proportion="-3.8113208">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/cart.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="32" selection-start="974" selection-end="1023" vertical-scroll-proportion="-4.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+            <state line="11" column="34" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CartActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+            <state line="44" column="59" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.58743167">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,7 +234,7 @@
       <file leaf-file-name="ItemActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="614" selection-end="634" vertical-scroll-proportion="0.0">
+            <state line="76" column="55" selection-start="2720" selection-end="2729" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -246,28 +262,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/swiftly/android/CameraTestActivity.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/Item.java" />
-        <option value="$PROJECT_DIR$/res/layout/cart_item.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ItemsDbAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/MyApplication.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/cart.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ActionModesNoActionBar.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ActionModes.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ActionItems.java" />
-        <option value="$PROJECT_DIR$/res/layout/item.xml" />
-        <option value="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/item.xml" />
+        <option value="$PROJECT_DIR$/res/layout/cart_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
     <option name="y" value="22" />
-    <option name="width" value="1292" />
-    <option name="height" value="791" />
+    <option name="width" value="1440" />
+    <option name="height" value="792" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -344,10 +359,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -364,24 +375,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftly4a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftly4a" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,14 +473,14 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/samples/demos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HoloEverywhere/HoloEverywhere" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -499,6 +492,10 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/drawable" />
+      <recent name="$PROJECT_DIR$/../HoloEverywhere/contrib/ActionBarSherlock/library/libs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res" />
     </key>
@@ -665,9 +662,26 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="demo" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="demo" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Android Application.swiftly4a" />
       <item index="1" class="java.lang.String" itemvalue="Android Tests.ActionBarSherlock" />
+      <item index="2" class="java.lang.String" itemvalue="Android Application.demo" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -726,29 +740,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1292" height="791" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="792" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1950385" sideWeight="0.89120716" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.89120716" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.89120716" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27833572" sideWeight="0.48958334" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2414307" sideWeight="0.9991974" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3794643" sideWeight="0.9991974" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35232744" sideWeight="0.7585693" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.390462" sideWeight="0.9328125" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38020086" sideWeight="0.62053573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31994048" sideWeight="0.9548063" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -787,7 +801,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -820,39 +834,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/android-sdk-macosx/sources/android-17/android/view/ContextThemeWrapper.java">
+    <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/src/com/actionbarsherlock/app/ActionBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="26" selection-start="2917" selection-end="2917" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.13043478">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="614" selection-end="634" vertical-scroll-proportion="0.0">
+        <state line="58" column="22" selection-start="3018" selection-end="3018" vertical-scroll-proportion="1.8181819">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../HoloEverywhere/contrib/ActionBarSherlock/library/src/com/actionbarsherlock/app/ActionBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="800" selection-end="800" vertical-scroll-proportion="0.27202073">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HoloEverywhere/HoloEverywhere/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="599" column="0" selection-start="33708" selection-end="33708" vertical-scroll-proportion="0.3316062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HoloEverywhere/HoloEverywhere/src/android/support/v4/app/_HoloFragmentInflater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="233" selection-end="233" vertical-scroll-proportion="0.17298187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ItemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="55" selection-start="2720" selection-end="2729" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android-sdk-macosx/platforms/android-17/data/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="20" selection-start="7538" selection-end="7538" vertical-scroll-proportion="0.29336736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2787" selection-end="2787" vertical-scroll-proportion="-10.615385">
+          <folding>
+            <element signature="e#1396#1701#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1962#2267#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RoundedImageView-master/RoundedImageView/src/com/makeramen/rounded/RoundedImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="51" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/cart.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="32" selection-start="974" selection-end="1023" vertical-scroll-proportion="-4.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="441" selection-end="441" vertical-scroll-proportion="-6.111111">
+        <state line="38" column="36" selection-start="1328" selection-end="1328" vertical-scroll-proportion="-3.8113208">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IdeaIC12/compile-server/swiftly4a_61688502/targets/java-production/swiftly4a/android/generated_sources/aapt/com/actionbarsherlock/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="846" column="26" selection-start="51471" selection-end="51471" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/navigation_cancel.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/zbar_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/cart_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-11.666667">
           <folding />
         </state>
       </provider>
@@ -862,41 +960,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+        <state line="44" column="59" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.58743167">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/src/com/actionbarsherlock/view/MenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="24" selection-start="4720" selection-end="4729" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/src/com/actionbarsherlock/view/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="29" selection-start="8297" selection-end="8297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/ScanActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="35" selection-start="2658" selection-end="2669" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="7" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.6724891">
-          <folding>
-            <element signature="e#1349#1654#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#2201#2202#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -953,7 +1019,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ActionBarSherlock</last-edited>
+          <last-edited>RoundedImageView</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

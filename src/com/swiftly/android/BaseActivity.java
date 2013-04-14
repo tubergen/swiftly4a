@@ -23,6 +23,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.makeramen.rounded.RoundedImageView;
 
 public class BaseActivity extends SherlockActivity {
     public static int THEME = R.style.Theme_Sherlock;
