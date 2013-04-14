@@ -18,6 +18,7 @@ package com.swiftly.android;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockActivity;
@@ -55,6 +56,13 @@ public class BaseActivity extends SherlockActivity {
                     }
                 })
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+
+
+        // Customize the action bar's font and remove the icon
+        TextView title = (TextView) findViewById(com.actionbarsherlock.R.id.abs__action_bar_title);
+        title.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 28);
+        title.setTypeface(((MyApplication) getApplication()).getCustomTypeface());
+        getSupportActionBar().setDisplayShowHomeEnabled(false);
 
         return true;
     }
