@@ -35,11 +35,8 @@ public class ScanActivity extends BaseActivity
     private Handler autoFocusHandler;
 
     TextView scanText;
-    Button scanButton;
 
     ImageScanner scanner;
-
-    private boolean barcodeScanned = false;
     private boolean previewing = true;
 
     static {
@@ -66,21 +63,6 @@ public class ScanActivity extends BaseActivity
         preview.addView(mPreview);
 
         scanText = (TextView)findViewById(R.id.scanText);
-
-        scanButton = (Button)findViewById(R.id.ScanButton);
-
-        scanButton.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                if (barcodeScanned) {
-                    barcodeScanned = false;
-                    scanText.setText("Scanning...");
-                    mCamera.setPreviewCallback(previewCb);
-                    mCamera.startPreview();
-                    previewing = true;
-                    mCamera.autoFocus(autoFocusCB);
-                }
-            }
-        });
     }
 
     @Override
@@ -138,8 +120,7 @@ public class ScanActivity extends BaseActivity
                 mCamera.stopPreview();
 
                 for (Symbol sym : scanner.getResults()) {
-                    scanText.setText("barcode result " + sym.getData());
-                    barcodeScanned = true;
+                    // scanText.setText("barcode result " + sym.getData());
                     startActivity(new Intent(ScanActivity.this, ItemActivity.class)
                             .putExtra(ItemActivity.KEY_BARCODE, sym.getData()));
                 }

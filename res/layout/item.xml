@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!--
     <TextView
@@ -22,13 +22,13 @@
     -->
 
     <Button
-            android:id="@+id/add_to_cart"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="@string/add_to_cart"
-            android:gravity="center"
-            android:visibility="gone"
-            android:layout_alignParentBottom="true"/>
+        android:id="@+id/add_to_cart"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/add_to_cart"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
 
     <!--  All for the image and its text -->
     <com.makeramen.rounded.RoundedImageView
@@ -53,7 +53,7 @@
         android:layout_marginRight="36dp"
         android:layout_alignBottom="@+id/item_img"
         android:layout_alignRight="@+id/item_img"
-        android:background="#7f000000"
+        android:background="@drawable/rounded_corners"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -66,7 +66,7 @@
         android:layout_above="@+id/textView3"
         android:layout_alignRight="@+id/textView3"
         android:layout_marginBottom="4dp"
-        android:background="#7f000000"
+        android:background="@drawable/rounded_corners"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -78,7 +78,7 @@
         android:layout_above="@+id/item_price"
         android:layout_alignRight="@+id/item_price"
         android:layout_marginBottom="4dp"
-        android:background="#7f000000"
+        android:background="@drawable/rounded_corners"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
