@@ -38,8 +38,10 @@ public class CartActivity extends BaseActivity {
 
     private void setTotal(Cursor cartCursor) {
         double total = 0;
-        for (cartCursor.moveToFirst(); cartCursor != null; cartCursor.moveToNext()) {
-          total += cartCursor.getFloat(cartCursor.getColumnIndex(ItemsDbAdapter.KEY_ITEM_PRICE));
+        boolean ok = cartCursor.moveToFirst();
+        while (ok) {
+            total += cartCursor.getFloat(cartCursor.getColumnIndex(ItemsDbAdapter.KEY_ITEM_PRICE));
+            ok = cartCursor.moveToNext();
         }
 
         ((TextView) findViewById(R.id.total)).setText(getAmountStr(total));

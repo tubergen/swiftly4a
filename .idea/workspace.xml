@@ -30,15 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f5d021-a43a-47fa-9fba-24c65176f3d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/BaseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" afterPath="$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/cart_item.xml" afterPath="$PROJECT_DIR$/res/layout/cart_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/item.xml" afterPath="$PROJECT_DIR$/res/layout/item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swiftly4a.iml" afterPath="$PROJECT_DIR$/swiftly4a.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="swiftly4a.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +49,7 @@
     <file path="/ItemActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365904451128" ignored="false" />
     <file path="/ItemsDbAdapter.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365879570271" ignored="false" />
     <file path="/item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365913636282" ignored="false" />
-    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365915418072" ignored="false" />
+    <file path="/CartActivity.java" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365915671625" ignored="false" />
     <file path="/a.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365903410057" ignored="false" />
     <file path="/cart.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365883340422" ignored="false" />
     <file path="/cart_item.xml" changelist="75f5d021-a43a-47fa-9fba-24c65176f3d0" time="1365915306253" ignored="false" />
@@ -223,7 +215,7 @@
       <file leaf-file-name="CartActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="59" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.58743167">
+            <state line="54" column="0" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.90958905">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -282,7 +274,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="792" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -740,7 +732,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="792" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="791" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1950385" sideWeight="0.89120716" order="-1" side_tool="false" content_ui="tabs" />
@@ -756,12 +748,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3794643" sideWeight="0.9991974" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3800298" sideWeight="0.9991974" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38020086" sideWeight="0.62053573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38020086" sideWeight="0.6199702" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31994048" sideWeight="0.9548063" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -960,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/swiftly/android/CartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="59" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.58743167">
+        <state line="54" column="0" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.90958905">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
