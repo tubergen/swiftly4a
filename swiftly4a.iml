@@ -16,6 +16,7 @@
     <orderEntry type="library" name="guava-14.0.1" level="project" />
     <orderEntry type="library" name="android-support-v4" level="project" />
     <orderEntry type="library" name="zbar" level="project" />
+    <orderEntry type="module" module-name="ActionBarSherlock" />
   </component>
 </module>
 

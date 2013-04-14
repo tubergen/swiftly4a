@@ -1,19 +1,18 @@
 package com.swiftly.android;
 
-import android.app.Activity;
 import android.database.Cursor;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import com.actionbarsherlock.view.Menu;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class CartActivity extends Activity {
+public class CartActivity extends BaseActivity {
     private ItemsDbAdapter mDbHelper;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +22,13 @@ public class CartActivity extends Activity {
         mDbHelper = ((MyApplication) getApplication()).getDatabaseAdapter();
 
         populateCartView();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        boolean result = super.onCreateOptionsMenu(menu);
+        menu.removeItem(mCartItemId);
+        return result;
     }
 
     private String getAmountStr(double amount) {
@@ -37,8 +43,7 @@ public class CartActivity extends Activity {
           total += cartCursor.getFloat(cartCursor.getColumnIndex(ItemsDbAdapter.KEY_ITEM_PRICE));
         } while (cartCursor.moveToNext());
 
-        ((TextView) findViewById(R.id.checkout)).setText(getString(R.string.checkout)
-                + " (" + getAmountStr(total) + ")");
+        ((TextView) findViewById(R.id.total)).setText(getAmountStr(total));
     }
 
     private Cursor getCart() {

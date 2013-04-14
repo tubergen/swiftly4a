@@ -13,8 +13,7 @@
     <ImageView
             android:id="@+id/item_img"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/ic_launcher" />
+            android:layout_width="match_parent" />
     <TextView
             android:id="@+id/item_price"
             android:layout_height="wrap_content"

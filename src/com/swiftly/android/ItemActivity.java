@@ -1,6 +1,5 @@
 package com.swiftly.android;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -21,7 +20,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class ItemActivity extends Activity {
+public class ItemActivity extends BaseActivity {
     public static final String KEY_BARCODE = "KEY_BARCODE";
 
     private static final String ITEMS_URL = "http://10.8.179.92:3000/api/v1/items?barcode=";

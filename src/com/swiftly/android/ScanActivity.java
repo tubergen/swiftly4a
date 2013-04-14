@@ -20,6 +20,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import com.actionbarsherlock.view.Menu;
 import net.sourceforge.zbar.Config;
 import net.sourceforge.zbar.Image;
 import net.sourceforge.zbar.ImageScanner;
@@ -27,7 +28,7 @@ import net.sourceforge.zbar.Symbol;
 
 /* Import ZBar Class files */
 
-public class ScanActivity extends Activity
+public class ScanActivity extends BaseActivity
 {
     private Camera mCamera;
     private CameraPreview mPreview;
@@ -81,6 +82,14 @@ public class ScanActivity extends Activity
             }
         });
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        boolean result = super.onCreateOptionsMenu(menu);
+        menu.removeItem(mScanItemId);
+        return result;
+    }
+
 
     public void onPause() {
         super.onPause();
