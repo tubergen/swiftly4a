@@ -19,6 +19,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class ItemActivity extends BaseActivity {
     public static final String KEY_BARCODE = "KEY_BARCODE";
@@ -33,7 +34,15 @@ public class ItemActivity extends BaseActivity {
         setContentView(R.layout.item);
 
         mBarcode = getIntent().getStringExtra(KEY_BARCODE);
-        mBarcode = Math.random() > 0.5 ? "012591" : "011591"; // temp temp temp
+        // temp temp temp
+        ArrayList<String> barcodes = new ArrayList<String>() {{
+            add("012591");
+            add("011591");
+        }};
+        Log.d("ItemActivity", "mBarcode");
+        if (barcodes.contains(mBarcode)) {
+            mBarcode = Math.random() > 0.5 ? barcodes.get(0) : barcodes.get(1);
+        }
 
         mDbHelper = ((MyApplication) getApplication()).getDatabaseAdapter();
         loadItemFromAPI(ITEMS_URL + mBarcode);

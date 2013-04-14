@@ -1,10 +1,12 @@
 package com.swiftly.android;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.actionbarsherlock.view.Menu;
@@ -93,6 +95,20 @@ public class CartActivity extends BaseActivity {
                 return v;
             }
         };
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> listView, View view,
+                                    int position, long id) {
+                // Get the cursor, positioned to the corresponding row in the result set
+                Cursor cursor = (Cursor) listView.getItemAtPosition(position);
+                String barcode = cursor.getString(
+                        cursor.getColumnIndexOrThrow(ItemsDbAdapter.KEY_ITEM_BARCODE));
+
+                startActivity(new Intent(CartActivity.this, ItemActivity.class)
+                        .putExtra(ItemActivity.KEY_BARCODE, barcode));
+            }
+        });
 
         // more at http://www.mysamplecode.com/2012/07/android-listview-cursoradapter-sqlite.html
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/ActionBarSherlock/ActionBarSherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HoloEverywhere/contrib/ActionBarSherlock/ActionBarSherlock/ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../HoloEverywhere/contrib/ActionBarSherlock/ActionBarSherlock/ActionBarSherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HoloEverywhere/HoloEverywhere/HoloEverywhere.iml" filepath="$PROJECT_DIR$/../HoloEverywhere/HoloEverywhere/HoloEverywhere.iml" />
       <module fileurl="file://$PROJECT_DIR$/../RoundedImageView-master/RoundedImageView/RoundedImageView.iml" filepath="$PROJECT_DIR$/../RoundedImageView-master/RoundedImageView/RoundedImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiftly4a.iml" filepath="$PROJECT_DIR$/swiftly4a.iml" />
     </modules>

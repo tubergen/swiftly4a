@@ -1,7 +1,7 @@
 package com.swiftly.android;
 
-import android.app.Application;
 import android.graphics.Typeface;
+import org.holoeverywhere.app.Application;
 
 public class MyApplication extends Application {
     private ItemsDbAdapter dbAdapter;

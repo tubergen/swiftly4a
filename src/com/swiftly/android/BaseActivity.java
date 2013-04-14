@@ -17,24 +17,21 @@ package com.swiftly.android;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.TypedValue;
 import android.widget.TextView;
-
-import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.makeramen.rounded.RoundedImageView;
+import org.holoeverywhere.app.Activity;
 
-public class BaseActivity extends SherlockActivity {
-    public static int THEME = R.style.Theme_Sherlock;
+public class BaseActivity extends Activity {
+    public static int THEME = R.style.Holo_Theme;
     protected int mCartItemId = 0;
     protected int mScanItemId = 1;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Used to put dark icons on light action bar
-        boolean isLight = THEME == R.style.Theme_Sherlock_Light;
+        boolean isLight = THEME == R.style.Holo_Theme_Light;
 
         menu.add(Menu.NONE, mCartItemId, Menu.NONE, "Cart").setOnMenuItemClickListener(
                 new MenuItem.OnMenuItemClickListener() {
