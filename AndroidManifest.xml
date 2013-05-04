@@ -11,14 +11,14 @@
         android:name=".MyApplication"
         android:debuggable="true" >
 
-        <activity android:name=".BaseActivity"
+        <activity android:name=".ScanActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.swiftly.android.ScanActivity"/>
+        <activity android:name="com.swiftly.android.BaseActivity"/>
         <activity android:name="com.swiftly.android.ItemActivity"/>
         <activity android:name="com.swiftly.android.CartActivity"/>
 

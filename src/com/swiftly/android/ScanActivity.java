@@ -14,6 +14,7 @@ import android.hardware.Camera.PreviewCallback;
 import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.actionbarsherlock.view.Menu;
@@ -117,6 +118,7 @@ public class ScanActivity extends BaseActivity
 
                 for (Symbol sym : scanner.getResults()) {
                     // scanText.setText("barcode result " + sym.getData());
+                    Log.d("ScanActivity", "barcode: " + sym.getData());
                     startActivity(new Intent(ScanActivity.this, ItemActivity.class)
                             .putExtra(ItemActivity.KEY_BARCODE, sym.getData()));
                 }

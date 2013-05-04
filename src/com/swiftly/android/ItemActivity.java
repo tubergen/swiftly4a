@@ -34,13 +34,15 @@ public class ItemActivity extends BaseActivity {
         setContentView(R.layout.item);
 
         mBarcode = getIntent().getStringExtra(KEY_BARCODE);
+        Log.d("ItemActivity", mBarcode);
         // temp temp temp
         ArrayList<String> barcodes = new ArrayList<String>() {{
             add("012591");
             add("011591");
+            add("0036000260854");
+            add("0010300343295");
         }};
-        Log.d("ItemActivity", "mBarcode");
-        if (barcodes.contains(mBarcode)) {
+        if (!barcodes.contains(mBarcode)) {
             mBarcode = Math.random() > 0.5 ? barcodes.get(0) : barcodes.get(1);
         }
 

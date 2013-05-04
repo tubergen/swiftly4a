@@ -30,7 +30,12 @@
         android:visibility="gone"
         android:layout_alignParentBottom="true"/>
 
-    <!--  All for the image and its text -->
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:text="temp"/>
+    <!--
+      All for the image and its text -->
     <com.makeramen.rounded.RoundedImageView
         xmlns:makeramen="http://schemas.android.com/apk/res/com.swiftly.android"
         android:id="@+id/item_img"
